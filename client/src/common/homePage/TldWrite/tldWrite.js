@@ -7,9 +7,9 @@ const tldWrite = () => (
   <div className="tld13Container sectionMargin" id="tldWrite">
     <div className="tld13Feature">
       <Feature
-        title="What is TLDWrite"
+        title="What is SummrAIze?"
         text="Your time, your mind, and your experience is unique and precious! In order to succeed, you must focus on what matters.
-      That's why TLDWrite created a smart solution for Automated Meeting Minutes, converting conversations into actions, empowering your skills, and saving hours of your time."
+      That's why SummrAIze created a smart solution for Automated Meeting Minutes, converting conversations into actions, empowering your skills, and saving hours of your time."
       />
     </div>
     <div className="tld13Heading">
@@ -22,7 +22,11 @@ const tldWrite = () => (
       />
       <Feature
         title="Transcript Summarisation"
-        text="TLDWrite transcribes your conversations on the fly. TLDWrite will generate a transcript enriched with speaker identification and voice separation."
+        text="SummrAIze transcribes your conversations on the fly. SummrAIze will generate a transcript enriched with speaker identification and voice separation."
+      />
+      <Feature
+        title="Shareable Smart Meeting Notes"
+        text="What sets us apart is our advanced machine learning algorithms, which extract key insights and transform them into a comprehensive, collaborative meeting summary for everyone involved."
       />
     </div>
   </div>

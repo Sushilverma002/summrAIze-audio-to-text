@@ -1,31 +1,37 @@
-import React, { useState, memo } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import React, { useState, memo } from "react";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-import logo from '../../utils/assets/TLDWrite.png';
+import logo from "../../utils/assets/logo-white.png";
 
-import './navbar.css';
+import "./navbar.css";
 
-
-const Menu = () =>{
+const Menu = () => {
   return (
     <>
-    <p className="hover-underline-animation"><a href="#home">Home</a></p>
-    <p className="hover-underline-animation"><a href="#tldWrite">What is TLDWrite?</a></p>
-    <p className="hover-underline-animation"><a href="#Summariser">Transcript Summarisation</a></p>
-    <p className="hover-underline-animation"><a href="#speechToText">Speech to Text</a></p>
-  </>
-  )
-  
-}
+      <p className="hover-underline-animation">
+        <a href="#home">Home</a>
+      </p>
+      <p className="hover-underline-animation">
+        <a href="#tldWrite">What is SummrAIze?</a>
+      </p>
+      <p className="hover-underline-animation">
+        <a href="#Summariser">Transcript Summarisation</a>
+      </p>
+      <p className="hover-underline-animation">
+        <a href="#speechToText">Speech to Text</a>
+      </p>
+    </>
+  );
+};
 
-const Authentication = () =>{
+const Authentication = () => {
   return (
-  <>
-    <p>Sign in</p>
-    <button type="button">Sign up</button>
-  </>
-  )
-}
+    <>
+      <p>Sign in</p>
+      <button type="button">Sign up</button>
+    </>
+  );
+};
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -34,29 +40,39 @@ const Navbar = () => {
     <div className="nv11navbar">
       <div className="nv11navbarLinks">
         <div className="nv11navbarLinksLogo">
-          <img src={logo} alt="logo" height="90" width="90"/>
-          </div>
+          <img src={logo} alt="logo" height="90" width="90" />
+        </div>
         <div className="nv11navbarLinksContainer">
-          <Menu/>
+          <Menu />
         </div>
       </div>
       <div className="nv11navbarLinksSign">
-      {/* <Authentication/> */}
+        <Authentication />
       </div>
       <div className="nv11navbarMenu">
-        {toggleMenu
-          ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
         {toggleMenu ? (
-        <div className="scale-up-center nv11navbarMenuContainer">
-          <div className="nv11navbarMenuLinks">
-            <Menu/>
+          <RiCloseLine
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(false)}
+          />
+        ) : (
+          <RiMenu3Line
+            color="#fff"
+            size={27}
+            onClick={() => setToggleMenu(true)}
+          />
+        )}
+        {toggleMenu ? (
+          <div className="scale-up-center nv11navbarMenuContainer">
+            <div className="nv11navbarMenuLinks">
+              <Menu />
+            </div>
+            <div className="nv11navbarMenuSigns">
+              <Authentication />
+            </div>
           </div>
-          <div className="nv11navbarMenuSigns">
-          {/* <Authentication/> */}
-          </div>
-        </div>
-        ):null}
+        ) : null}
       </div>
     </div>
   );
