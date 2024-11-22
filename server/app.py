@@ -4,7 +4,7 @@ from text_summarisation import text_summary
 from pymongo import MongoClient
 import gridfs
 
-mongoURI = f"mongodb://localhost:27017/summrAIze-db"
+mongoURI = f"mongodb://localhost:27017/summrAIze"
 client = MongoClient(mongoURI)
 fs = gridfs.GridFS(client['summrAIze'], "uploads")
 
