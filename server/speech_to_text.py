@@ -19,7 +19,7 @@ def automatic_speech_recognition(fileId, fs):
         if data.contentType == "audio/mp3":
             sound = AudioSegment.from_mp3(BytesIO(data.read()))
 
-        # split audio sound where silence is 700 miliseconds or more and get chunks
+        # split audio sound where silence is 500 miliseconds or more and get chunks
         chunks = split_on_silence(sound,
             # experiment with this value for your target audio file
             min_silence_len = 500,

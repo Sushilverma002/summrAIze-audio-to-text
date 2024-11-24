@@ -52,7 +52,7 @@ const FileUploader = (props) => {
 
     try {
       const response = await axios.post(
-        `http://192.168.0.102:8080/${endpoint}`,
+        `http://192.168.63.88:8080/${endpoint}`,
         data,
         config
       );
