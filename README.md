@@ -1,5 +1,7 @@
 ## Overview
 Meeting summarizer to generate important points and actionables from any meeting, lecture and transcript. (Support for WAV, MP4, MP3)
+![image](https://github.com/user-attachments/assets/832a8501-60dd-4f5e-98fc-4d0e22d54fa8)
+
 
 ## Aim & Abstract
 Meeting summarizer to generate important points and actionables from any meeting, lecture and transcript. Provide access to the same functionality across all platforms (Web, and Browser Extension) 
